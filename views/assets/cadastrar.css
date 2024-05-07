@@ -1,0 +1,27 @@
+.modal-inserir {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.modal-inserir #form-inserir {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+}

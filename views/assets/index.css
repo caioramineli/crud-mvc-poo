@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 0.5px black;
+    background-color: #003b6b;
+}
+
+header h1 {
+    font-size: 1.7rem;
+    color: #f3f3f3;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    position: relative;
+    gap: 1.5rem;
+}
+
+.container-btns-inserir-mostrar {
+    width: 662px;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+#btn-cadastrar {
+    background-color: green;
+    margin: 0;
+}
+
+#btn-mostar {
+    width: auto;
+}
+
+main label {
+    width: 70%;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+main input {
+    width: 70%;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    padding: 7px;
+    border: none;
+    background-color: #bbb;
+}
+
+main button {
+    width: 120px;
+    font-size: 1.2rem;
+    background-color: rgb(0, 105, 204);
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-left: 7px;
+    color: #f3f3f3;
+}
+
+main button:hover {
+    filter: brightness(0.8);
+    transition: .3s;
+}
+
+.container-fornecedores {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.container-recovery-id-nome {
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+main #form-r-id {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 315px;
+}
+
+main #form-r-id input {
+    width: 100%;
+}
+
+main #form-r-id button {
+    width: 100%;
+    margin-left: 0px;
+}
+
+main #form-r-nome {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 315px;
+}
+
+main #form-r-nome input {
+    width: 100%;
+}
+
+main #form-r-nome button {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.modal-update,
+.modal-delete {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 2;
+}
+
+#fechar-modal-inserir,
+#fechar-modal-update,
+#fechar-modal-delete {
+    position: relative;
+    top: 8px;
+    left: 202px;
+    padding: 4px;
+    color: white;
+    width: 25px;
+    cursor: pointer;
+}
+
+#fechar-modal-inserir:hover,
+#fechar-modal-update:hover,
+#fechar-modal-delete:hover {
+    filter: opacity(50%);
+    transition: 0.2s;
+}
+
+main .modal-update #form-update {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    width: 450px;
+    height: 525px;
+    margin: 0 auto;
+}
+
+#form-update input:nth-child(5) {
+    cursor: no-drop;
+}
+
+main .modal-update #form-update button {
+    width: auto;
+}
+
+main .modal-update #form-update #btn-apagar-update {
+    width: 105px;
+}
+
+main .modal-delete #form-delete {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+main .modal-delete #form-delete input {
+    cursor: no-drop;
+}
+
+main .modal-delete #form-delete h3 {
+    margin-top: 10px;
+    width: 70%;
+}
+
+main .modal-delete #form-delete button {
+    width: auto;
+    background-color: rgb(160, 9, 9);
+}
+
+main .modal-delete #form-delete #btn-cancelar-delete {
+    width: 120px;
+    background-color: rgb(0, 105, 204);
+}

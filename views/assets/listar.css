@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid #757575;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #aaa;
+    border: 1px solid #757575;
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #757575;
+    padding: 8px;
+    text-align: center;
+}
+
+td:first-child,
+th:first-child {
+    border-left: none;
+}
+
+td:last-child,
+th:last-child {
+    border-right: none;
+}
+
+table img {
+    width: 25px;
+    margin-left: 5px;
+}
